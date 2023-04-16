@@ -16,7 +16,10 @@ export class AuthService {
             throw new BadRequestException('email in use');
         }
 
-        // Hash the user's password
+        /* 
+        * Hash the user's password
+        */
+       
         // Generate a salt
         const salt = randomBytes(8).toString('hex');
 
